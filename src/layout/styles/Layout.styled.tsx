@@ -15,13 +15,13 @@ export const PageContainer = styled(BoxContent)((props: { theme: ITheme }) => ({
 export const StyledMain = styled.main((props: { theme: ITheme }) => ({
   position: 'absolute',
 
-  height: `calc(100% - ${props.theme.layout.headerHeight.mobile})`,
+  height: '100%',
   width: props.theme.layout.mainWidth.mobile,
   bottom: 0,
   border: 'dashed 1px lime', // TODO - REMOVE BORDER
   [desktopMediaQuery]: {
     width: props.theme.layout.mainWidth.desktop,
     margin: 'auto',
-    height: `calc(100% - ${props.theme.layout.headerHeight.desktop})`,
+    height: '100%',
   },
 }));

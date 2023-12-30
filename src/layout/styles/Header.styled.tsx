@@ -14,4 +14,5 @@ export const StyledHeader = styled.header((props: { theme: ITheme }) => ({
   [desktopMediaQuery]: {
     height: props.theme.layout.headerHeight.desktop,
   },
+  zIndex: 1,
 }));
