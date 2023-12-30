@@ -7,21 +7,18 @@ import { BoxContent } from '@/src/shared/components';
 
 export const PageContainer = styled(BoxContent)((props: { theme: ITheme }) => ({
   alignItems: 'center',
-  height: '100%',
-  overflowY: 'auto',
   position: 'relative',
 }));
 
 export const StyledMain = styled.main((props: { theme: ITheme }) => ({
   position: 'absolute',
+  overflowY: 'auto',
+  height: '100vh',
 
-  height: '100%',
   width: props.theme.layout.mainWidth.mobile,
-  bottom: 0,
-  border: 'dashed 1px lime', // TODO - REMOVE BORDER
+
   [desktopMediaQuery]: {
     width: props.theme.layout.mainWidth.desktop,
     margin: 'auto',
-    height: '100%',
   },
 }));

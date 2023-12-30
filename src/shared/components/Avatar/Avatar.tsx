@@ -1,15 +1,25 @@
 import Image, { ImageProps } from 'next/image';
 import React from 'react';
-import { AvatarContainer, IAvatarContainerProps } from './Avatar.styled';
+import { AvatarContainer } from './Avatar.styled';
 
 export interface IAvatarProps extends ImageProps {
-  variant: IAvatarContainerProps['variant'];
+  variant: 'small' | 'medium' | 'large';
 }
 
 const Avatar = ({ variant, ...imageProps }: IAvatarProps) => {
+  const sizeByVariant = {
+    small: 48,
+    medium: 72,
+    large: 180,
+  };
   return (
-    <AvatarContainer variant={variant}>
-      <Image layout="responsive" {...imageProps} alt={imageProps.alt} />
+    <AvatarContainer>
+      <Image
+        {...imageProps}
+        alt={imageProps.alt}
+        width={sizeByVariant[variant ?? 'small']}
+        height={sizeByVariant[variant ?? 'small']}
+      />
     </AvatarContainer>
   );
 };
