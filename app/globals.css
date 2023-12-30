@@ -20,6 +20,9 @@ body {
   /* color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-end-rgb)); */
   font-size: 62.5%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
 }
 
 * {

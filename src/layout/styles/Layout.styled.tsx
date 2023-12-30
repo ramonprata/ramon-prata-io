@@ -7,7 +7,7 @@ import { BoxContent } from '@/src/shared/components';
 
 export const PageContainer = styled(BoxContent)((props: { theme: ITheme }) => ({
   alignItems: 'center',
-  height: '100vh',
+  height: '100%',
   overflowY: 'auto',
   position: 'relative',
 }));
