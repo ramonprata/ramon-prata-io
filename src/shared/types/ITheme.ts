@@ -1,4 +1,5 @@
 export interface IPalette {
+  transparent: string;
   background: string;
   foreground: string;
 

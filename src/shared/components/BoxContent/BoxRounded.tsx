@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-empty-interface */
 import React, { PropsWithChildren } from 'react';
 import { BoxContainer, IBoxContainerProps } from './BoxContent.styled';
 

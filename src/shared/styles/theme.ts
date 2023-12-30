@@ -1,6 +1,7 @@
 import { IPalette, ITheme } from '../types/ITheme';
 
 const darkTheme: IPalette = {
+  transparent: 'transparent',
   background: '#06050a',
   foreground: '#f5f3f7',
 
@@ -12,6 +13,7 @@ const darkTheme: IPalette = {
 };
 
 const lightTheme: IPalette = {
+  transparent: 'transparent',
   background: '#f5f3f7',
   foreground: '#06050a',
 

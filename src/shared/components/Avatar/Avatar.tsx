@@ -9,7 +9,7 @@ export interface IAvatarProps extends ImageProps {
 const Avatar = ({ variant, ...imageProps }: IAvatarProps) => {
   return (
     <AvatarContainer variant={variant}>
-      <Image layout="responsive" {...imageProps} />
+      <Image layout="responsive" {...imageProps} alt={imageProps.alt} />
     </AvatarContainer>
   );
 };
