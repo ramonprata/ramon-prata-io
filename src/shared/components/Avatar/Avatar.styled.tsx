@@ -2,10 +2,10 @@
 
 import styled from '@emotion/styled';
 
-const sizeByVariant = {
-  small: '48px',
-  medium: '72px',
-  large: '180px',
+export const sizeByVariant = {
+  small: 48,
+  medium: 72,
+  large: 180,
 };
 
 export interface IAvatarContainerProps {
@@ -14,8 +14,10 @@ export interface IAvatarContainerProps {
 
 export const AvatarContainer = styled('div')<IAvatarContainerProps>`
   background-color: ${(props) => props.theme.palette.background};
-  border-radius: 50%;
   overflow: hidden;
-  width: ${(props) => sizeByVariant[props.variant ?? 'small']};
-  height: ${(props) => sizeByVariant[props.variant ?? 'small']};
+  border-radius: 50%;
+  height: ${(props) => sizeByVariant[props.variant ?? 'small']}px;
+  & > img {
+    object-fit: cover;
+  }
 `;

@@ -14,4 +14,6 @@ export const StyledHeader = styled.header((props: { theme: ITheme }) => ({
   [desktopMediaQuery]: {
     height: props.theme.layout.headerHeight.desktop,
   },
+  zIndex: 1,
+  boxShadow: '0 1px 2px 0 rgba(0,0,0,.1)',
 }));

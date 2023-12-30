@@ -4,15 +4,8 @@ import { AboutContent } from './styles/About.styled';
 
 export default function About() {
   return (
-    <AboutContent flex center>
-      <Avatar
-        src="/stranger-codes.jpeg"
-        alt="Stranger codes mug"
-        width={180}
-        height={37}
-        priority
-        variant="large"
-      />
+    <AboutContent flex center direction="column">
+      <Avatar src="/stranger-codes.jpeg" alt="Stranger codes mug" priority variant="large" />
     </AboutContent>
   );
 }
