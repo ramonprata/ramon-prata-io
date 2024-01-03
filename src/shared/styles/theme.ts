@@ -10,6 +10,7 @@ const darkTheme: IPalette = {
 
   primaryText: '#f5f3f7',
   secondaryText: '#be51c8',
+  textShadow: '-1px -2px 2px rgba(0,0,0,0.22)',
 };
 
 const lightTheme: IPalette = {
@@ -22,6 +23,7 @@ const lightTheme: IPalette = {
 
   primaryText: '#06050a',
   secondaryText: '#be51c8',
+  textShadow: '-1px -2px 2px rgba(0,0,0,0.22)',
 };
 
 export const getTheme = (darkMode = false): ITheme => {
@@ -39,27 +41,27 @@ export const getTheme = (darkMode = false): ITheme => {
     },
     typography: {
       h1: {
-        fontSize: '3.2rem',
+        fontSize: 32,
         fontWeight: 700,
         lineHeight: 60,
       },
       h2: {
-        fontSize: '2.4rem',
+        fontSize: 24,
         fontWeight: 700,
         lineHeight: 60,
       },
       caption: {
-        fontSize: '1.4rem',
+        fontSize: 16,
         fontWeight: 700,
         lineHeight: 16,
       },
       link: {
-        fontSize: '1.6rem',
+        fontSize: 16,
         fontWeight: 500,
         lineHeight: 24,
       },
       p: {
-        fontSize: '1.6rem',
+        fontSize: 16,
         fontWeight: 400,
         lineHeight: 24,
       },
