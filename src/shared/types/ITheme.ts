@@ -8,11 +8,12 @@ export interface IPalette {
 
   primaryText: string;
   secondaryText: string;
+  textShadow: string;
 }
 
 export interface ITypography {
   fontWeight: number;
-  fontSize: number | string;
+  fontSize: number;
   lineHeight: number | string;
 }
 
@@ -31,4 +32,9 @@ export interface ITheme {
       mobile: string | number;
     };
   };
+}
+
+export enum ThemeModeEnum {
+  dark = 'dark',
+  light = 'light',
 }
