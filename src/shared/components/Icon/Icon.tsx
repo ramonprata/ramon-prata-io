@@ -12,7 +12,7 @@ export interface IIconProps {
 const Icon = ({ iconName, onlyMobile, onClick }: IIconProps) => {
   return (
     <IconContainer onClick={onClick} onlyMobile={!!onlyMobile}>
-      <StyledIcon className="material-symbols-outlined">{iconName}</StyledIcon>
+      <StyledIcon className={'material-symbols-outlined'}>{iconName}</StyledIcon>
     </IconContainer>
   );
 };

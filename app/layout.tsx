@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter, Chakra_Petch } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import './globals.css';
 import './globalicons.css';
 import { ProvidersWrapper } from '@/src/features/ProvidersWrapper/ProvidersWrapper';
@@ -12,15 +12,10 @@ export const metadata: Metadata = {
 
 const inter = Inter({ subsets: ['latin'] });
 
-const chakra = Chakra_Petch({
-  weight: '700',
-  subsets: ['latin'],
-});
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={[inter.className, chakra.className].join(' ')}>
+      <body className={[inter.className].join(' ')}>
         <ProvidersWrapper>
           <Layout>{children}</Layout>
         </ProvidersWrapper>

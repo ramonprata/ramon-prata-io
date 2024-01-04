@@ -32,8 +32,3 @@ export const LogoContainer = styled(BoxContent)((props: { theme: ITheme }) => ({
   width: 'auto',
   cursor: 'pointer',
 }));
-
-export const LogoText = styled(Typography)((props: { theme: ITheme }) => ({
-  textShadow: props.theme.palette.textShadow,
-  letterSpacing: 2,
-}));

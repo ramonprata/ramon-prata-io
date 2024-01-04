@@ -1,8 +1,8 @@
 'use client';
 
 import styled from '@emotion/styled';
-import { desktopMediaQuery } from '../../shared/styles';
-import { ITheme } from '../../shared/types/ITheme';
+import { desktopMediaQuery } from '../../../shared/styles';
+import { ITheme } from '../../../shared/types/ITheme';
 import { BoxContent } from '@/src/shared/components';
 
 export const PageContainer = styled(BoxContent)((props: { theme: ITheme }) => ({

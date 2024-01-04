@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Avatar } from '@/src/shared/components';
-import { AboutContent } from './styles/About.styled';
+import { AboutContent } from '../styles/About.styled';
 
 export default function About() {
   return (
