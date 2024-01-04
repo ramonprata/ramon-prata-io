@@ -4,7 +4,7 @@ import React, { PropsWithChildren } from 'react';
 import { DrawerMenu, Header, Icon, BarNavigation } from '../../shared/components';
 import { StyledMain, PageContainer } from './styles/Layout.styled';
 import { useDrawerMenuState } from '../hooks/useDrawerMenuState';
-import { useThemeModeState } from '..';
+import { useThemeModeState } from '../hooks/useThemeModeState';
 
 const Layout = (props: PropsWithChildren) => {
   const { isDrawerMenuOpened, setDrawerMenuOpened } = useDrawerMenuState();

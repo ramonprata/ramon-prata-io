@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { Avatar } from '@/src/shared/components';
 import { AboutContent } from '../styles/About.styled';
 

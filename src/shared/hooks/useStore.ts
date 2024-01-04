@@ -2,7 +2,7 @@ import { useStore, vanillaStore, TGlobalActions, TGlobalInitialState } from '../
 
 export function useSliceSetter<T, K extends keyof T>(actionName: keyof T): T[K] {
   const action = useStore(vanillaStore, (state) => state[actionName as keyof TGlobalActions]);
-  return action;
+  return action as T[K];
 }
 
 export function useSliceState<T, K extends keyof T>(stateName: keyof T): T[K] {
@@ -10,5 +10,5 @@ export function useSliceState<T, K extends keyof T>(stateName: keyof T): T[K] {
     vanillaStore,
     (state) => state[stateName as keyof TGlobalInitialState]
   );
-  return sliceState;
+  return sliceState as T[K];
 }

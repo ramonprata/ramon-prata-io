@@ -1,5 +1,5 @@
-import { BoxContent, Typography } from '@/src/shared/components';
 import React from 'react';
+import { BoxContent, Typography } from '@/src/shared/components';
 
 const Playground = () => {
   return (

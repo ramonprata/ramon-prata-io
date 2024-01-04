@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import React from 'react';
 import Typography from '../Typography/Typography';
 import { StyledNav, StyledLink } from './Navigation.styled';

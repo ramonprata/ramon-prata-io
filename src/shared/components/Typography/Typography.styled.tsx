@@ -32,7 +32,7 @@ export const TextFactory = ({
 }: ITextProps) => {
   // @ts-ignore
   return styled[tag](({ theme }: { theme: ITheme }) => {
-    const defaultFont = theme?.typography?.['default'];
+    const defaultFont = theme?.typography?.['batata'];
     const variantFont = theme?.typography?.[variant];
     return {
       defaultFont,
