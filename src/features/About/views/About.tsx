@@ -1,5 +1,5 @@
-import { Avatar } from '@/src/shared/components';
-import { AboutContent } from '../styles/About.styled';
+import { Avatar } from "@/src/shared/components";
+import { AboutContent } from "../styles/About.styled";
 
 export default function About() {
   return (
