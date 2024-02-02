@@ -1,12 +1,7 @@
-import React from 'react';
-import { BoxContent, Typography } from '@/src/shared/components';
+import SelfPicture from "./SelfPicture";
 
 const Playground = () => {
-  return (
-    <BoxContent flex center>
-      <Typography variant="caption" text={`<building playground.../>`} />
-    </BoxContent>
-  );
+  return <SelfPicture />;
 };
 
 export default Playground;

@@ -1,2 +1,2 @@
-import { About } from '../src/features/About';
+import { About } from "../src/features/About";
 export default About;
