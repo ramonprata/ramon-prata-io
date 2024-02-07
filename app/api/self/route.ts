@@ -24,6 +24,7 @@ const getEmotion = async () => {
     }, 4000);
   });
 };
+
 export async function GET(req: Request) {
   const emotion = await getEmotion();
   return Response.json({
@@ -31,3 +32,5 @@ export async function GET(req: Request) {
     emotion: emotion,
   });
 }
+
+export const revalidate = 0;
