@@ -24,10 +24,13 @@ const getEmotion = async () => {
     }, 4000);
   });
 };
-export async function GET(req: Request) {
+
+export async function POST(req: Request) {
   const emotion = await getEmotion();
   return Response.json({
     success: true,
     emotion: emotion,
   });
 }
+
+export const revalidate = 0;
