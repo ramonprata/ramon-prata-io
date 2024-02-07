@@ -27,23 +27,9 @@ const getEmotion = async () => {
 
 export async function POST(req: Request) {
   const emotion = await getEmotion();
-  return Response.json(
-    {
-      success: true,
-      emotion: emotion,
-    },
-    {
-      headers: {
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Allow-Methods": "POST, OPTIONS",
-      },
-    }
-  );
-}
-
-export async function OPTIONS(request: Request) {
-  return new Response(null, {
-    status: 204,
+  return Response.json({
+    success: true,
+    emotion: emotion,
   });
 }
 
