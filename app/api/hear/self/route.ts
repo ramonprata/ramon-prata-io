@@ -2,7 +2,7 @@ import type { NextApiRequest, NextApiResponse } from "next";
 
 type ResponseData = {
   success: boolean;
-  superHero: string;
+  character: string;
 };
 
 const heros = [
@@ -27,7 +27,7 @@ export async function POST(req: Request) {
   const emotion = await getHero();
   return Response.json({
     success: true,
-    superHero: emotion,
+    character: emotion,
   } as ResponseData);
 }
 
