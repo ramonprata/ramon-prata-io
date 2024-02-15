@@ -1,8 +1,19 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
+enum Emotions {
+  happy = "happy",
+  excited = "excited",
+  sad = "sad",
+  surprised = "surprised",
+  tired = "tired",
+  angry = "angry",
+  bored = "bored",
+  default = "default",
+}
+
 type ResponseData = {
   success: boolean;
-  emotion: string;
+  emotion: Emotions;
 };
 
 const emotions = [
@@ -30,7 +41,7 @@ export async function POST(req: Request) {
   return Response.json({
     success: true,
     emotion: emotion,
-  });
+  } as ResponseData);
 }
 
 export const revalidate = 0;
