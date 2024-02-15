@@ -30,13 +30,11 @@ const ProgressPlayerPage = () => {
         progressBarWidth / (INDICATOR_WIDTH + GAP)
       );
       setBars(numberOfBars);
-      console.log("numberOfBars:>>: ", numberOfBars);
     }
   }, [bars]);
 
   const onPlay = () => {
     const refsSet = !!audioRef.current && progressRef.current;
-    console.log("object:>>: ", refsSet);
     if (refsSet) {
       if (!isPlaying) {
         audioRef.current.play();
