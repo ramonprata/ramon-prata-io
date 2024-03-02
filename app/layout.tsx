@@ -22,7 +22,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={[inter.className].join(" ")}>
         <ProvidersWrapper>
-          <Layout>{children}</Layout>
+          {/* <Layout>{children}</Layout> */}
+          <>{children}</>
         </ProvidersWrapper>
       </body>
     </html>
