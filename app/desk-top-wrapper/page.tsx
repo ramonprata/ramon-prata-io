@@ -15,7 +15,6 @@ const mediaKey = "@media only screen and (min-width: 768px)";
 
 const Wrapper = styled.div({
   position: "absolute",
-  background: "orange",
   width: "100%",
   height: "100%",
   display: "flex",
@@ -27,7 +26,6 @@ const Wrapper = styled.div({
 });
 const Container = styled.div({
   position: "relative",
-  // background: "lightblue",
   width: "100%",
   height: "100%",
   alignItems: "center",
@@ -39,18 +37,46 @@ const Container = styled.div({
   },
   "& .idx-0": {
     background: "lightpink",
+    "& div": {
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      zIndex: 1,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   "& .idx-1": {
     background: "lightgreen",
+    "& div": {
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      zIndex: 1,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   "& .idx-2": {
     background: "lightyellow",
+    "& div": {
+      width: "100%",
+      height: "100%",
+      position: "absolute",
+      zIndex: 1,
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+    },
   },
   "& *": {
     fontWeight: "bold",
   },
 });
 const Content = styled.div({
+  border: "2px dashed",
   position: "relative",
   scrollSnapAlign: "start",
   height: "100%",
@@ -59,9 +85,10 @@ const Content = styled.div({
   alignItems: "center",
   margin: "auto",
   width: "100%",
+  borderRadius: 16,
+  overflow: "hidden",
   [mediaKey]: {
-    width: "300px",
-    borderRadius: 32,
+    width: "360px",
   },
 });
 
@@ -127,7 +154,10 @@ export default function DesktopWrapper() {
 const ContentComponent = ({ classname }: { classname: string }) => {
   return (
     <Content className={classname} id={classname}>
-      <a href={`#${classname}`}>{`conetent-${classname}`}</a>
+      <div style={{}}>
+        <h1>{`conetent-${classname}`}</h1>
+      </div>
+      <a href={`#${classname}`} />
     </Content>
   );
 };
